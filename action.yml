@@ -1,0 +1,22 @@
+# SPDX-FileCopyrightText: 2020 Benedict Harcourt
+#
+# SPDX-License-Identifier: BSD-2-Clause
+
+name: "Write Enviornment File"
+description: "Writes an environment file (.env) style file to disk"
+
+branding:
+  icon: paperclip
+  color: gray-dark
+
+inputs:
+  file_name:
+    description: "The filename to write to"
+    required: false
+    default: .env
+
+runs:
+  using: "node12"
+  main: "write-env-file.js"
+
+# vim: nospell ts=2 expandtab

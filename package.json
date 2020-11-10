@@ -1,0 +1,27 @@
+{
+  "name": "create-env-file",
+  "version": "1.0.0",
+  "description": "",
+  "main": "create-env-file.js",
+  "keywords": [
+    "GitHub action",
+    "environment",
+    "env file",
+    ".env"
+  ],
+  "author": "Benedict Harcourt",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javajawa/create-envfile"
+  },
+  "license": "BSD-2-Clause",
+  "engines": {
+    "node": "14.7.0"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0"
+  }
+}

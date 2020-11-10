@@ -1,0 +1,6 @@
+# SPDX-FileCopyrightText: 2020 Benedict Harcourt
+#
+# SPDX-License-Identifier: BSD-2-Clause
+
+env*
+.env*
