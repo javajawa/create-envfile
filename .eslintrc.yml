@@ -1,0 +1,23 @@
+# SPDX-FileCopyrightText: 2022 Future PLC
+#
+# SPDX-License-Identifier: CC0-1.0
+
+env:
+  node: true
+  es6: true
+extends: "eslint:recommended"
+parserOptions:
+  ecmaVersion: 2020
+rules:
+  indent:
+    - error
+    - 2
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - double
+  semi:
+    - error
+    - always

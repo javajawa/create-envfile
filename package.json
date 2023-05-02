@@ -16,12 +16,12 @@
   },
   "license": "BSD-2-Clause",
   "engines": {
-    "node": "14.7.0"
+    "node": "16.17.0"
   },
   "dependencies": {
-    "@actions/core": "^1.2.6"
+    "@actions/core": "^1.10.0"
   },
   "devDependencies": {
-    "eslint": "^7.6.0"
+    "eslint": "^8.39.0"
   }
 }

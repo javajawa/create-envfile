@@ -14,10 +14,8 @@ jobs:
   es-lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-
-      - uses: a-b-r-o-w-n/eslint-action@v1
-        with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
-          files: "*.js"
-          extensions: ".js"
+      - uses: actions/checkout@v3
+      - name: Install dependencies (inlcuding dev dependencies)
+        run: npm install
+      - name: Run ESLint
+        run: npx eslint . --ext .js --ignore-pattern ./node_modules
