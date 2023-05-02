@@ -19,7 +19,7 @@ async function main() {
   stream.on("finish", () => core.info(file_name + " written"));
 
   Object.keys(process.env)
-    .filter((k) => process.env.hasOwn(k))
+    .filter((k) => Object.hasOwn(process.env, k))
     .filter((k) => k.startsWith(PREFIX))
     .forEach((k) =>
       stream.write(`${k.slice(PREFIX.length)}=${process.env[k]}\n`)
