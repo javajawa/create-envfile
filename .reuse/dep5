@@ -3,14 +3,22 @@ Upstream-Name: create-envfiles
 Upstream-Contact: Benedict Harcourt <ben.harcourt@harcourtprogramming.co.uk>
 Source: https://github.com/javajawa/create-envfile
 
-Files: package.json package-lock.json
+Files: package.json package-lock.json node_modules/.package-lock.json
 Copyright: n/a
 License: CC0-1.0
 
-Files: node_modules/@actions/core/*
+Files: node_modules/@actions/*
 Copyright: 2019 Gihub
 License: MIT
 
 Files: node_modules/once/* node_modules/wrappy/*
 Copyright: Isaac Z. Schlueter and Contributors
 License: ISC
+
+Files: node_modules/uuid/*
+Copyright: 2010-2020 Robert Kieffer and other contributors
+License: MIT
+
+Files: node_modules/tunnel/*
+Copyright: 2012 Koichi Kobayashi
+License: MIT
